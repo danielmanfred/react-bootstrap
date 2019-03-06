@@ -1,4 +1,4 @@
-# Basic Responsive Web App Exapmle.
+# Basic Responsive Web App Example.
 
 ## Resources used in development
 
