@@ -47,22 +47,36 @@ class App extends Component {
           </section>
         </nav>
 
-        <section id="carouselSection" className="carousel slide" data-ride="carousel">
+        <section id="carouselSection" className="carousel slide" data-ride="carousel" data-interval="3000">
           <ol className="carousel-indicators">
-            <li data-target="#carouselIndicators" data-slide-to="0" className="active"></li>
-            <li data-target="#carouselIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselIndicators" data-slide-to="2"></li>
+            <li data-target="#carouselSection" data-slide-to="0" className="active"></li>
+            <li data-target="#carouselSection" data-slide-to="1"></li>
+            <li data-target="#carouselSection" data-slide-to="2"></li>
           </ol>
           <div className="carousel-inner">
             <div className="carousel-item active">
-              <img src="https://via.placeholder.com/600/92c952" alt="Image 1" className="d-block w-100"/>
+              <img src="https://via.placeholder.com/600/92c952" alt="Image 1" className="d-block w-100 image-fluid"/>
+              <div className="carousel-catpion d-none d-md-block">
+                <h4>Image 1</h4>
+                <p>Something Information</p>
+              </div>
             </div>
             <div className="carousel-item">
-              <img src="https://via.placeholder.com/600/771796" alt="Image 2" className="d-block w-100"/>
+              <img src="https://via.placeholder.com/600/771796" alt="Image 2" className="d-block w-100 image-fluid"/>
             </div>
             <div className="carousel-item">
-              <img src="https://via.placeholder.com/600/24f355" alt="Image 3" className="d-block w-100"/>
+              <img src="https://via.placeholder.com/600/24f355" alt="Image 3" className="d-block w-100 image-fluid"/>
             </div>
+          </div>
+
+          <div className="carousel-control-prev" href="#carouselSection" role="button" data-slide="prev">
+            <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span className="sr-only">Previous</span>
+          </div>
+
+          <div className="carousel-control-next" href="#carouselSection" role="button" data-slide="next">
+            <span className="carousel-control-next-icon" aria-hidden="true"></span>
+            <span className="sr-only">Next</span>
           </div>
         </section>
 
